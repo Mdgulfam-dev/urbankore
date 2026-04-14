@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Subtext */}
           <p className="mt-4 text-gray-800 text-base sm:text-lg">
             We design and transform homes with premium quality work, trusted by
-            hundreds of clients in Delhi & Noida.
+            hundreds of clients in Punjab,Jalandhar. Chandigarh & Haryana.
           </p>
 
           {/* Trust Badges (Glass Effect) */}

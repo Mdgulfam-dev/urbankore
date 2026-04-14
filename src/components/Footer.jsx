@@ -14,7 +14,8 @@ const Footer = () => {
             </h2>
             <p className="mt-3 text-sm text-gray-400">
               30+ years of experience in interior design and home renovation. We
-              deliver premium quality work across Delhi & Noida.
+              deliver premium quality work across Punjab,Jalandhar. Chandigarh &
+              Haryana.
             </p>
           </div>
 
@@ -76,7 +77,8 @@ const Footer = () => {
               </p>
 
               <p className="flex items-start gap-2">
-                <MapPin size={16} /> Punjab & Jalandhar, India
+                <MapPin size={16} /> Punjab,Jalandhar. Chandigarh & Haryana,
+                India
               </p>
             </div>
 

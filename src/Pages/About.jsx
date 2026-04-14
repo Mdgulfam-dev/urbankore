@@ -21,14 +21,14 @@ const About = () => {
           {/* RIGHT CONTENT */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              About UrboKore
+              About UrbanKore
             </h2>
 
             <p className="mt-4 text-gray-600 leading-relaxed">
               With over <strong>30 years of experience</strong>, we specialize
-              in interior design and home renovation services across Delhi &
-              Noida. Our goal is to transform your space into something
-              beautiful, functional, and long-lasting.
+              in interior design and home renovation services across
+              Punjab,Jalandhar. Chandigarh & Haryana. Our goal is to transform
+              your space into something beautiful, functional, and long-lasting.
             </p>
 
             <p className="mt-3 text-gray-600">

@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Rahul Sharma",
-    location: "Delhi",
+    location: "Punjab",
     project: "2BHK Renovation",
     rating: 5,
     image: "https://randomuser.me/api/portraits/men/32.jpg",
@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     name: "Priya Verma",
-    location: "Noida",
+    location: "Haryana",
     project: "Modular Kitchen",
     rating: 4,
     image: "https://randomuser.me/api/portraits/women/44.jpg",
@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     name: "Amit Gupta",
-    location: "Gurgaon",
+    location: "Chandigarh",
     project: "Living Room Interior",
     rating: 5,
     image: "https://randomuser.me/api/portraits/men/76.jpg",
@@ -41,7 +41,7 @@ const Testimonials = () => {
             Real Client Experiences
           </h2>
           <p className="text-gray-600 mt-2">
-            Trusted by homeowners across Delhi & Noida
+            Trusted by homeowners across Punjab,Jalandhar. Chandigarh & Haryana
           </p>
         </div>
 
