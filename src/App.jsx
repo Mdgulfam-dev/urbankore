@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import ServicePage from "./Pages/servicePage";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/whatsApp";
+import Project from "./components/Project";
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<ServicePage />} />
+        <Route path="/projects" element={<Project />} />
+
       </Routes>
       <Footer />
     </>
