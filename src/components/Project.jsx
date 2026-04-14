@@ -45,6 +45,8 @@ const projects = [
   },
 ];
 
+
+
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -63,25 +65,28 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative overflow-hidden rounded-xl shadow-md"
+              className="bg-white rounded-xl shadow-md overflow-hidden"
             >
+              {/* Image */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition"
+                className="w-full h-52 sm:h-60 object-cover"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex flex-col justify-end p-4">
+              {/* CONTENT (VISIBLE ON MOBILE) */}
+              <div className="p-4">
                 <span className="text-[#d4af37] text-sm">
                   {project.category}
                 </span>
 
-                <h3 className="text-white font-semibold">{project.title}</h3>
+                <h3 className="text-gray-900 font-semibold mt-1">
+                  {project.title}
+                </h3>
 
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="mt-2 bg-[#d4af37] text-white px-4 py-2 rounded-md text-sm w-fit"
+                  className="mt-3 bg-[#d4af37] text-white px-4 py-2 rounded-md text-sm"
                 >
                   View Details
                 </button>
@@ -94,8 +99,8 @@ const Projects = () => {
       {/* MODAL */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 px-4">
-          <div className="bg-white rounded-xl max-w-lg w-full p-6 relative">
-            {/* Close Button */}
+          <div className="bg-white rounded-xl max-w-lg w-full p-4 sm:p-6 relative">
+            {/* Close */}
             <button
               onClick={() => setSelectedProject(null)}
               className="absolute top-3 right-3 text-gray-500 text-xl"
@@ -107,15 +112,20 @@ const Projects = () => {
             <img
               src={selectedProject.image}
               alt={selectedProject.title}
-              className="w-full h-56 object-cover rounded-lg"
+              className="w-full h-48 sm:h-56 object-cover rounded-lg"
             />
 
             {/* Content */}
-            <h3 className="text-xl font-bold mt-4">{selectedProject.title}</h3>
+            <h3 className="text-lg sm:text-xl font-bold mt-4">
+              {selectedProject.title}
+            </h3>
 
             <p className="text-sm text-[#d4af37]">{selectedProject.category}</p>
 
-            <p className="text-gray-600 mt-2">{selectedProject.description}</p>
+            <p className="text-gray-600 mt-2 text-sm">
+              {selectedProject.description ||
+                "High-quality interior project completed with premium materials and expert craftsmanship."}
+            </p>
 
             {/* CTA */}
             <a
